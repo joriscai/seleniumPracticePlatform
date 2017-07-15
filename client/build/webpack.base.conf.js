@@ -20,14 +20,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    modules: [resolve('../node_modules')],
+    modules: [resolve(path.join('..', 'node_modules'))],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src')
     }
   },
   resolveLoader: {
-    modules: [resolve('../node_modules')]
+    modules: [resolve(path.join('..', 'node_modules'))]
   },
   module: {
     rules: [
